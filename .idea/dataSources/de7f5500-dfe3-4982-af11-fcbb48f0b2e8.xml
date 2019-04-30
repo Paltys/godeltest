@@ -96,8 +96,8 @@
     <schema id="19" parent="3" name="public">
       <ObjectId>16458</ObjectId>
       <Owner>postgres</Owner>
-      <IntrospectionTimestamp>2019-04-30.18:53:14.917</IntrospectionTimestamp>
-      <IntrospectionStateNumber>625</IntrospectionStateNumber>
+      <IntrospectionTimestamp>2019-04-30.22:04:55.565</IntrospectionTimestamp>
+      <IntrospectionStateNumber>631</IntrospectionStateNumber>
       <Current>1</Current>
       <Visible>1</Visible>
     </schema>
@@ -144,24 +144,24 @@
       <Type>index</Type>
     </access-method>
     <sequence id="26" parent="19" name="employee_employee_id_seq">
-      <ObjectId>16521</ObjectId>
+      <ObjectId>24576</ObjectId>
       <Owner>postgres</Owner>
-      <StateNumber>624</StateNumber>
+      <StateNumber>630</StateNumber>
       <SequenceIdentity>1..2147483647</SequenceIdentity>
       <BelongsToColumn>1</BelongsToColumn>
       <CacheSize>1</CacheSize>
       <DataType>integer</DataType>
     </sequence>
     <table id="27" parent="19" name="employee">
-      <ObjectId>16523</ObjectId>
+      <ObjectId>24578</ObjectId>
       <Owner>postgres</Owner>
-      <StateNumber>624</StateNumber>
+      <StateNumber>630</StateNumber>
     </table>
     <column id="28" parent="27" name="employee_id">
       <Position>1</Position>
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>624</StateNumber>
+      <StateNumber>630</StateNumber>
       <DefaultExpression>nextval(&apos;employee_employee_id_seq&apos;::regclass)</DefaultExpression>
       <TypeId>23</TypeId>
       <SequenceName>employee_employee_id_seq</SequenceName>
@@ -170,45 +170,45 @@
       <Position>2</Position>
       <DataType>text|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>624</StateNumber>
+      <StateNumber>630</StateNumber>
       <TypeId>25</TypeId>
     </column>
     <column id="30" parent="27" name="last_name">
       <Position>3</Position>
       <DataType>text|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>624</StateNumber>
+      <StateNumber>630</StateNumber>
       <TypeId>25</TypeId>
     </column>
     <column id="31" parent="27" name="department_id">
       <Position>4</Position>
       <DataType>integer|0s</DataType>
-      <StateNumber>624</StateNumber>
+      <StateNumber>630</StateNumber>
       <TypeId>23</TypeId>
     </column>
     <column id="32" parent="27" name="job_title">
       <Position>5</Position>
       <DataType>text|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>624</StateNumber>
+      <StateNumber>630</StateNumber>
       <TypeId>25</TypeId>
     </column>
     <column id="33" parent="27" name="gender">
       <Position>6</Position>
       <DataType>text|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>624</StateNumber>
+      <StateNumber>630</StateNumber>
       <TypeId>25</TypeId>
     </column>
     <column id="34" parent="27" name="date_of_birth">
       <Position>7</Position>
-      <DataType>text|0s</DataType>
+      <DataType>date|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>624</StateNumber>
-      <TypeId>25</TypeId>
+      <StateNumber>630</StateNumber>
+      <TypeId>1082</TypeId>
     </column>
     <index id="35" parent="27" name="employee_empoyee_id_uindex">
-      <ObjectId>16530</ObjectId>
+      <ObjectId>24585</ObjectId>
       <ColNames>employee_id</ColNames>
       <Unique>1</Unique>
     </index>

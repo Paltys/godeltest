@@ -32,9 +32,10 @@ public class Controller {
     }
 
     @DeleteMapping("{id}")
-    public int delete(@PathVariable int id){
+    public Employee delete(@PathVariable int id){
+        Employee employee = employeeService.getEmployee(id);
         employeeService.delEmployee(id);
-        return id;
+        return employee;
     }
 
     @PostMapping
